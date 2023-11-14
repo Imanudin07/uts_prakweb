@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRASI KENDARAAN</title>
+     <style> 
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        text-align: center;
+    }
+    form {
+        background-color: #f2f2f2;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    fieldset{
+        background-color: aqua;
+    }
+    label {
+        display: inline;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    select{
+        height: 40px;
+    }
+    input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">REGISTRASI KENDARAAN</h2>
+    <form action="proses_data.html" method="POST">
+    <fieldset style="text-align: center;">
+        <label for="Status">Status      :</label>
+        <input type="radio" value="M" name="Status" id="Status">
+        <label for="Mahasiswa">Mahasiswa</label>
+        <input type="radio" value="D" name="Status" id="Status">
+        <label for="Dosen">Dosen</label>
+        <br>
+        <br>
+        <label for="NIM">NIM     :</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="Nama Lengkap">Nama Lengkap    :</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="Prodi">Prodi     :</label>
+        <select name="Prodi" id="Prodi">
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Bisnis Digital">Bisnis Digital</option>
+        </select>
+        <br>
+        <br>
+        <label for="Jenis Kendaraan">Jenis Kendaraan      :</label>
+        <input type="radio" value="M" name="Jenis Kendaraan" id="Jenis Kendaraan">
+        <label for="Motor">Motor</label>
+        <input type="radio" value="M" name="Jenis Kendaraan" id="Jenis Kendaraan">
+        <label for="Mobil">Mobil</label>
+        <br>
+        <br>
+        <label for="Nopol">Nopol     :</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="Merk">Merk     :</label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="Upload STNK">Upload STNK     :</label>
+        <input type="file"><input type="text" value="Browse" id="Browse"> 
+        <br>
+        <br>
+        <input type="submit" value="Daftar" id="Daftar">
+    </fieldset>
+    </form>
+</body>
+</html>
